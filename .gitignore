@@ -1,0 +1,38 @@
+# Data & models — never commit these
+data/
+models/
+*.parquet
+*.wav
+*.csv
+*.zip
+*.pt
+*.pth
+*.pkl
+*.h5
+
+# Office temp/lock files
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environments
+.env
+.env.*
+venv/
+.venv/
+env/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp

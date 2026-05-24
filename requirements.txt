@@ -1,0 +1,8 @@
+# Pinned for Google Colab free-tier compatibility (Python 3.10+)
+datasets==2.20.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+matplotlib==3.9.1
+seaborn==0.13.2
+librosa==0.10.2
