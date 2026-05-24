@@ -50,16 +50,14 @@ We use two complementary sources that cover the same 10,039 utterances:
 
 ## Setup
 
-### Local (Anaconda — recommended)
-
 ```bash
 # 1. Clone the repository
 git clone <repo-url>
 cd <repo-name>
 
-# 2. Create and activate a dedicated conda environment
-conda create -n ser python=3.10
-conda activate ser
+# 2. Create and activate a virtual environment
+python3.12 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
