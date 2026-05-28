@@ -18,12 +18,11 @@ numbers directly comparable to published baselines.
 2. [Setup](#setup)
 3. [Getting the Data](#getting-the-data)
 4. [Labelling Decisions](#labelling-decisions)
-5. [Evaluation Protocol](#evaluation-protocol)
-6. [Folder Layout](#folder-layout)
-7. [Branch & PR Workflow](#branch--pr-workflow)
-8. [Sprint Roadmap](#sprint-roadmap)
-9. [Reproducibility](#reproducibility)
-10. [References](#references)
+5. [Folder Layout](#folder-layout)
+6. [Branch & PR Workflow](#branch--pr-workflow)
+7. [Sprint Roadmap](#sprint-roadmap)
+8. [Reproducibility](#reproducibility)
+9. [References](#references)
 
 ---
 
@@ -97,35 +96,8 @@ directly comparable across papers. We follow this convention.
 | `exc` (excited) | **happy** | Excited and happy overlap heavily in the original confusion matrix (Busso et al., 2008) |
 | `neu` (neutral) | **neutral** | Direct mapping |
 | `sad` (sad) | **sad** | Direct mapping |
-| `xxx` (no agreement) | **dropped** | ~25% of rows; training on noise hurts generalisation |
+| `xxx/other` (no agreement) | **dropped** | ~25% of rows; training on noise hurts generalisation |
 | `fru`, `dis`, `fea`, `sur` | **dropped** | Classes are too small to learn reliably (e.g., disgust = 2 samples) |
-
-After cleaning, the usable 4-class set is approximately:
-**Neutral 1,708 · Angry · Happy+Excited 1,636 · Sad 1,084**
-(exact counts printed by the data loader at runtime).
-
----
-
-## Evaluation Protocol
-
-### Split — Leave-One-Session-Out (LOSO)
-
-IEMOCAP has 5 sessions, each recorded by a **unique pair of speakers**.
-We hold out one full session as the test set and train on the remaining four,
-then rotate. This guarantees that **no speaker ever appears in both train and
-test** — a requirement for honest, generalisation-testing results.
-
-> Randomly splitting rows is incorrect for IEMOCAP: the same speaker would
-> appear on both sides of the split, inflating scores artificially.
-
-### Primary metrics
-
-| Metric | Why we use it |
-|--------|--------------|
-| **Weighted F1** | Accounts for class imbalance; reflects overall system performance |
-| **UAR** (Unweighted Average Recall = macro recall) | Treats every class equally regardless of frequency; the field-standard SER metric |
-
-Accuracy is computed as a secondary sanity check only.
 
 ---
 
@@ -140,8 +112,6 @@ Accuracy is computed as a secondary sanity check only.
 ├── notebooks/                  # Jupyter notebooks for EDA and experiments
 ├── reports/
 │   └── figures/                # Confusion matrices and other saved plots
-├── src/                        # Source code modules (added during Sprint 1)
-├── iemocap_full_dataset.csv    # Local metadata CSV (tracked in git)
 ├── .gitignore
 ├── README.md
 └── requirements.txt
