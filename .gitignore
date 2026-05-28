@@ -36,3 +36,10 @@ env/
 .idea/
 .vscode/
 *.swp
+
+# skills
+skills/
+.claude/
+.agents/
+
+CLAUDE.md
