@@ -1,0 +1,6 @@
+emotion,precision,recall,f1_score,support
+angry,0.4648,0.5211,0.4913,190
+happy,0.7075,0.643,0.6737,395
+neutral,0.375,0.3591,0.3669,259
+sad,0.3906,0.5319,0.4505,188
+frustrated,0.4797,0.4315,0.4543,438

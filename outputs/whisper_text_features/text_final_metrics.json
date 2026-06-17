@@ -1,0 +1,26 @@
+{
+  "best_model_name": "LogisticRegression",
+  "best_tfidf_ngram_range": "(1, 2)",
+  "best_tfidf_max_features": 10000,
+  "best_tfidf_min_df": 2,
+  "best_val_accuracy": 0.5092,
+  "best_val_uar": 0.5009,
+  "best_val_macro_f1": 0.4927,
+  "best_val_weighted_f1": 0.5095,
+  "final_test_accuracy": 0.5,
+  "final_test_uar": 0.4973,
+  "final_test_macro_f1": 0.4873,
+  "final_test_weighted_f1": 0.5022,
+  "num_train_samples": 6855,
+  "num_val_samples": 1469,
+  "num_test_samples": 1470,
+  "label_order": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "frustrated"
+  ],
+  "seed": 42,
+  "debug_mode": false
+}
