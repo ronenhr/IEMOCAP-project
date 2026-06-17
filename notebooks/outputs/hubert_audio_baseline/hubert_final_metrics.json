@@ -1,0 +1,25 @@
+{
+  "best_epoch_by_val_uar": 6,
+  "best_val_uar": 0.587848,
+  "final_val_accuracy": 0.591559,
+  "final_val_uar": 0.587848,
+  "final_val_macro_f1": 0.585669,
+  "final_val_weighted_f1": 0.592064,
+  "final_test_accuracy": 0.585034,
+  "final_test_uar": 0.585895,
+  "final_test_macro_f1": 0.578844,
+  "final_test_weighted_f1": 0.5825,
+  "num_train_samples": 6855,
+  "num_val_samples": 1469,
+  "num_test_samples": 1470,
+  "label_order": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "frustrated"
+  ],
+  "seed": 42,
+  "max_audio_length": 96000,
+  "model_name": "facebook/hubert-base-ls960"
+}
