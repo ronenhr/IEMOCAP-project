@@ -1,0 +1,6 @@
+emotion,utterances,total_tokens,unique_tokens,lexical_diversity
+angry,1269,8511,1836,0.2157
+frustrated,2917,18434,2967,0.161
+happy,2632,16308,2789,0.171
+neutral,1726,9170,2420,0.2639
+sad,1250,7450,1519,0.2039
