@@ -1,11 +1,28 @@
-# Pinned for Google Colab free-tier compatibility (Python 3.10+)
+# IEMOCAP Speech Emotion Recognition project
+# Python 3.10+ recommended. Designed for Google Colab / GPU notebooks.
+
+# Core data stack
 datasets==2.20.0
 pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.5.1
+
+# Visualization
 matplotlib==3.9.1
 seaborn==0.13.2
-librosa==0.10.2
 plotly>=5.18.0
+
+# Audio processing
+librosa==0.10.2
+soundfile>=0.12.1
+audioread>=3.0.1
+
+# Deep learning / Hugging Face
+torch>=2.2
 transformers==5.10.2
-torch>=2.2   
+accelerate>=1.0.0
+
+# Notebook utilities
+tqdm>=4.66.0
+notebook>=7.0.0
+ipykernel>=6.29.0
