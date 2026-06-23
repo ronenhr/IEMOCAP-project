@@ -1,0 +1,29 @@
+{
+  "model": "distilbert-base-uncased",
+  "selection_method": "best_hp_search_val_uar",
+  "learning_rate": 3e-05,
+  "batch_size": 16,
+  "weight_decay": 0.0,
+  "epochs": 4,
+  "warmup_ratio": 0.1,
+  "val_uar": 0.5369,
+  "val_macro_f1": 0.4784,
+  "val_weighted_f1": 0.4985,
+  "val_accuracy": 0.4966,
+  "test_uar": 0.5408,
+  "test_macro_f1": 0.4993,
+  "test_weighted_f1": 0.5135,
+  "test_accuracy": 0.5137,
+  "num_train_samples": 5624,
+  "num_val_samples": 2052,
+  "num_test_samples": 2118,
+  "label_order": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "frustrated"
+  ],
+  "seed": 42,
+  "debug_mode": false
+}
