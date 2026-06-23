@@ -1,0 +1,29 @@
+{
+  "best_model_name": "distilbert-base-uncased",
+  "max_length": 96,
+  "learning_rate": 2e-05,
+  "epochs": 4,
+  "batch_size": 16,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "val_uar": 0.5292,
+  "val_macro_f1": 0.4881,
+  "val_weighted_f1": 0.5068,
+  "val_accuracy": 0.5005,
+  "test_uar": 0.544,
+  "test_macro_f1": 0.5232,
+  "test_weighted_f1": 0.5386,
+  "test_accuracy": 0.5368,
+  "num_train_samples": 5624,
+  "num_val_samples": 2052,
+  "num_test_samples": 2118,
+  "label_order": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "frustrated"
+  ],
+  "seed": 42,
+  "debug_mode": false
+}

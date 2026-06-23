@@ -1,0 +1,55 @@
+{
+  "experiment": "session_level_holdout",
+  "val_session": "Ses04",
+  "test_session": "Ses05",
+  "val_groups": [
+    "Ses04F",
+    "Ses04M"
+  ],
+  "test_groups": [
+    "Ses05F",
+    "Ses05M"
+  ],
+  "train_sessions": [
+    "Ses01",
+    "Ses02",
+    "Ses03"
+  ],
+  "val_sessions": [
+    "Ses04"
+  ],
+  "test_sessions": [
+    "Ses05"
+  ],
+  "best_epoch_by_val_uar": 10,
+  "best_val_uar": 0.515951,
+  "final_train_loss": 0.622032,
+  "final_train_accuracy": 0.756935,
+  "final_train_uar": 0.776487,
+  "final_train_macro_f1": 0.759761,
+  "final_val_accuracy": 0.506335,
+  "final_val_uar": 0.515951,
+  "final_val_macro_f1": 0.502138,
+  "final_val_weighted_f1": 0.506037,
+  "final_test_accuracy": 0.477809,
+  "final_test_uar": 0.4952,
+  "final_test_macro_f1": 0.475181,
+  "final_test_weighted_f1": 0.478543,
+  "num_train_samples": 5624,
+  "num_val_samples": 2052,
+  "num_test_samples": 2118,
+  "label_order": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad",
+    "frustrated"
+  ],
+  "seed": 42,
+  "max_audio_length": 128000,
+  "model_name": "facebook/hubert-base-ls960",
+  "pooling": "mean+max",
+  "augmentation": true,
+  "lr_encoder": 2e-05,
+  "lr_classifier": 0.0001
+}
